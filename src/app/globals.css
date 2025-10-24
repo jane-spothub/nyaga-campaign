@@ -1,0 +1,65 @@
+
+@import "tailwindcss";
+@tailwind utilities;
+
+:root {
+    /* Modern Color Palette */
+    --color-primary: #1e40af;
+    --color-primary-light: #3b82f6;
+    --color-primary-dark: #1e3a8a;
+
+    --color-secondary: #dc2626;
+    --color-secondary-light: #ef4444;
+    --color-secondary-dark: #b91c1c;
+
+    --color-accent: #f59e0b;
+    --color-accent-light: #fbbf24;
+    --color-accent-dark: #d97706;
+
+    --color-background: #ffffff;
+    --color-background-light: #f8fafc;
+
+    --color-text: #1e293b;
+    --color-text-muted: #64748b;
+    --color-text-light: #f1f5f9;
+
+    --color-glass: rgba(255, 255, 255, 0.25);
+    --color-glass-border: rgba(0, 0, 0, 0.1);
+
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom gradient backgrounds */
+.gradient-primary {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+}
+
+.gradient-accent {
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+}
+
+/* Glass morphism effects */
+.glass {
+    background: var(--color-glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--color-glass-border);
+}
