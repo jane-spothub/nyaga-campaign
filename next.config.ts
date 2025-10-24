@@ -1,11 +1,10 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-    content: [
-        "./pages/**/*.{js,ts,jsx,tsx}",
-        "./components/**/*.{js,ts,jsx,tsx}"
-    ],
-    theme: {
-        extend: {},
+// next.config.ts
+import type { NextConfig } from 'next'
+
+const nextConfig: NextConfig = {
+    images: {
+        domains: ['images.unsplash.com'],
     },
-    plugins: [],
 }
+
+export default nextConfig
