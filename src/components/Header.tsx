@@ -21,6 +21,8 @@ export default function Header() {
         <header className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 ${
             scrolled ? 'bg-white/90 backdrop-blur-xl shadow-lg' : 'bg-transparent'
         }`}>
+            <div className="container mx-auto px-6 lg:px-8">
+
             <div className="container mx-auto px-4 py-3">
                 <div className="flex justify-between items-center text-[var(--color-text)]">
                     {/* Logo */}
@@ -103,6 +105,7 @@ export default function Header() {
                         </div>
                     </nav>
                 )}
+            </div>
             </div>
         </header>
     );
