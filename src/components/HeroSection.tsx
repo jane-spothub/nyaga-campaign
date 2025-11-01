@@ -27,6 +27,7 @@ export default function HeroSection() {
                 <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-red-900/50 to-orange-900/40"></div>
             </div>
 
+
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
                 <div className="max-w-6xl mx-auto">
                     {/* Hero Content */}
