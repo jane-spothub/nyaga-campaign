@@ -17,14 +17,14 @@ export default function HeroSection() {
             {/* Background Image with Overlay */}
             <div className="absolute inset-0">
                 <Image
-                    src="/hero-bg.jpg"
+                    src="/hero2-bg.png"
                     alt="Tharaka Constituency Background"
                     fill
                     className="object-cover w-full h-full"
                     priority
                 />
                 {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-blue-900/50 to-purple-900/40"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-red-900/50 to-orange-900/40"></div>
             </div>
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -50,7 +50,7 @@ export default function HeroSection() {
                         {/* Subtitle */}
                         <p className="text-xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed">
                             Development-first leadership focused on better roads, reliable water,
-                            and real opportunities for Tharaka's youth. This campaign is about
+                            and real opportunities for Tharaka&#39;s youth. This campaign is about
                             work, dignity, and measurable progress.
                         </p>
 
