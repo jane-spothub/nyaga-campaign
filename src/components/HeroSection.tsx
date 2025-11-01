@@ -16,13 +16,13 @@ export default function HeroSection() {
 
             {/* Background Image with Overlay */}
             <div className="absolute inset-0">
-                <Image
-                    src="/hero2-bg.png"
-                    alt="Tharaka Constituency Background"
-                    fill
-                    className="object-cover w-full h-full"
-                    priority
-                />
+                {/*<Image*/}
+                {/*    src="/hero2-bg.png"*/}
+                {/*    alt="Tharaka Constituency Background"*/}
+                {/*    fill*/}
+                {/*    className="object-cover w-full h-full"*/}
+                {/*    priority*/}
+                {/*/>*/}
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-red-900/50 to-orange-900/40"></div>
             </div>
