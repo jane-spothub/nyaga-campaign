@@ -77,47 +77,48 @@ export default function HeroSection() {
                         </div>
 
                         {/* Stats */}
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto">
-                            {[
-                                { value: "15+", label: "Years Service", gradient: "from-orange-500 to-red-500" },
-                                { value: "50+", label: "Projects", gradient: "from-purple-500 to-pink-500" },
-                                { value: "100%", label: "Commitment", gradient: "from-cyan-500 to-blue-500" }
-                            ].map((stat, index) => (
-                                <div key={index} className="group text-center p-6 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                                    <div className={`w-16 h-16 bg-gradient-to-r ${stat.gradient} rounded-2xl flex items-center justify-center text-white text-lg font-bold mx-auto mb-3 shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-110`}>
-                                        {stat.value}
-                                    </div>
-                                    <div className="text-sm font-semibold text-white/90 group-hover:text-white transition-colors duration-300">
-                                        {stat.label}
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
+                        {/*<div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto">*/}
+                        {/*    {[*/}
+                        {/*        { value: "15+", label: "Years Service", gradient: "from-orange-500 to-red-500" },*/}
+                        {/*        { value: "50+", label: "Projects", gradient: "from-purple-500 to-pink-500" },*/}
+                        {/*        { value: "100%", label: "Commitment", gradient: "from-cyan-500 to-blue-500" }*/}
+                        {/*    ].map((stat, index) => (*/}
+                        {/*        <div key={index} className="group text-center p-6 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:scale-105">*/}
+                        {/*            <div className={`w-16 h-16 bg-gradient-to-r ${stat.gradient} rounded-2xl flex items-center justify-center text-white text-lg font-bold mx-auto mb-3 shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-110`}>*/}
+                        {/*                {stat.value}*/}
+                        {/*            </div>*/}
+                        {/*            <div className="text-sm font-semibold text-white/90 group-hover:text-white transition-colors duration-300">*/}
+                        {/*                {stat.label}*/}
+                        {/*            </div>*/}
+                        {/*        </div>*/}
+                        {/*    ))}*/}
+                        {/*</div>*/}
+                        {/*<div className="max-w-4xl mx-auto">*/}
+                        {/*    <div className="relative bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">*/}
+                        {/*        <div className="flex flex-wrap justify-center gap-4">*/}
+                        {/*            {[*/}
+                        {/*                { href: "/about", label: "About JM", icon: "👨‍💼" },*/}
+                        {/*                { href: "/vision", label: "Our Vision", icon: "🎯" },*/}
+                        {/*                { href: "/agenda", label: "Development Plan", icon: "📋" },*/}
+                        {/*                { href: "/contact", label: "Get Involved", icon: "📞" }*/}
+                        {/*            ].map((link, index) => (*/}
+                        {/*                <Link*/}
+                        {/*                    key={index}*/}
+                        {/*                    href={link.href}*/}
+                        {/*                    className="group inline-flex items-center gap-2 px-6 py-3 bg-white/20 hover:bg-white/30 text-white rounded-xl font-medium transition-all duration-300 transform hover:scale-105 border border-white/30"*/}
+                        {/*                >*/}
+                        {/*                    <span className="text-lg">{link.icon}</span>*/}
+                        {/*                    {link.label}*/}
+                        {/*                    <span className="group-hover:translate-x-1 transition-transform">→</span>*/}
+                        {/*                </Link>*/}
+                        {/*            ))}*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
 
                     {/* Quick Navigation */}
-                    <div className="max-w-4xl mx-auto">
-                        <div className="relative bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
-                            <div className="flex flex-wrap justify-center gap-4">
-                                {[
-                                    { href: "/about", label: "About JM", icon: "👨‍💼" },
-                                    { href: "/vision", label: "Our Vision", icon: "🎯" },
-                                    { href: "/agenda", label: "Development Plan", icon: "📋" },
-                                    { href: "/contact", label: "Get Involved", icon: "📞" }
-                                ].map((link, index) => (
-                                    <Link
-                                        key={index}
-                                        href={link.href}
-                                        className="group inline-flex items-center gap-2 px-6 py-3 bg-white/20 hover:bg-white/30 text-white rounded-xl font-medium transition-all duration-300 transform hover:scale-105 border border-white/30"
-                                    >
-                                        <span className="text-lg">{link.icon}</span>
-                                        {link.label}
-                                        <span className="group-hover:translate-x-1 transition-transform">→</span>
-                                    </Link>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 
