@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 export const metadata = {
     title: "JM Nyaga Campaign",
-    description: "Hon. Nyaga James Muturi – Tharaka MP Campaign",
+    description: "Hon. Nyaga James Muturi – Tharaka Constituency MP Campaign",
 };
 
 export default function RootLayout({
