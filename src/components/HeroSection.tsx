@@ -24,11 +24,11 @@ export default function HeroSection() {
                     priority
                 />
                 {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-orange-500 to-orange-900/40"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-red-900/30 to-orange-600/30"></div>
             </div>
 
 
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative ">
                 <div className="max-w-6xl mx-auto">
                     {/* Hero Content */}
                     <div className="text-center pt-20 pb-16">
@@ -41,7 +41,7 @@ export default function HeroSection() {
                         {/* Main Heading */}
                         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
                             Building a{" "}
-                            <span className="bg-gradient-to-r from-purple-800 to-blue-950 bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
                                 Better Future
                             </span>
                             <br />
@@ -49,11 +49,13 @@ export default function HeroSection() {
                         </h1>
 
                         {/* Subtitle */}
-                        <p className="text-xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed">
-                            Development-first leadership focused on better roads, reliable water,
-                            and real opportunities for Tharaka&#39;s youth. This campaign is about
-                            work, dignity, and measurable progress.
-                        </p>
+                        <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 my-8">
+                            <p className="text-xl text-gray-950 max-w-3xl mx-auto mb-0 leading-relaxed">
+                                Development-first leadership focused on better roads, reliable water,
+                                and real opportunities for Tharaka&#39;s youth. This campaign is about
+                                work, dignity, and measurable progress.
+                            </p>
+                        </div>
 
                         {/* Action Buttons */}
                         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">

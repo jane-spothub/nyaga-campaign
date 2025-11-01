@@ -41,7 +41,7 @@ export default function AboutSection() {
                                     <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-400 rounded-3xl blur-lg opacity-30 group-hover:opacity-50 transition duration-500"></div>
                                     <div className="relative rounded-2xl overflow-hidden transform group-hover:scale-[1.02] transition duration-500">
                                         <img
-                                            src="/JMNyagapic.png"
+                                            src="/hero2-bg.png"
                                             alt="JM Nyaga - Tharaka MP Candidate"
                                             className="w-full h-auto object-cover"
                                         />
