@@ -6,10 +6,11 @@ import Agenda from "@/app/agenda/page";
 
 export default function Home() {
     return (
-        <div className="bg-gradient-to-br from-slate-50 via-white to-blue-50/30 antialiased">
+        <div className="bg-[var(--color-background-light)] text-[var(--color-foreground)] antialiased">
             <HeroSection/>
 
-            <main className="space-y-0">
+            <main className="container mx-auto px-6 lg:px-8 py-12 space-y-20">
+
                 <About/>
                 <Vision/>
                 <Agenda/>

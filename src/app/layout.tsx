@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 export const metadata = {
     title: "JM Nyaga Campaign",
-    description: "Hon. Nyaga James Muturi – Tharaka Constituency MP Campaign",
+    description: "Hon. Nyaga James Mutwiri – Tharaka Constituency MP Campaign",
 };
 
 export default function RootLayout({
@@ -15,10 +15,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-        <body className="bg-white text-black">
-        <Header />
+        <body className="bg-white text-black" data-gramm="false" data-gr-ext-installed="">
+        <Header/>
         <main>{children}</main>
-        <Footer />
+        <Footer/>
         </body>
         </html>
     );

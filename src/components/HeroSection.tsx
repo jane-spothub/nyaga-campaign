@@ -59,18 +59,18 @@ export default function HeroSection() {
                         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
                             <Link
                                 href="/volunteer"
-                                className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl min-w-[200px]"
+                                className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-950 to-blue-800 text-yellow-100 rounded-xl font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl min-w-[200px]"
                             >
-                                <span className="text-xl">🤝</span>
+                                {/*<span className="text-xl">🤝</span>*/}
                                 Join as Volunteer
                                 <span className="group-hover:translate-x-1 transition-transform">→</span>
                             </Link>
 
                             <Link
                                 href="/donate"
-                                className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-slate-800 rounded-xl font-semibold hover:bg-slate-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl min-w-[200px]"
+                                className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-yellow-300 to-red-500 text-black rounded-xl font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl min-w-[200px]"
                             >
-                                <span className="text-xl">❤️</span>
+                                {/*<span className="text-xl">❤️</span>*/}
                                 Donate Now
                                 <span className="group-hover:translate-x-1 transition-transform">→</span>
                             </Link>

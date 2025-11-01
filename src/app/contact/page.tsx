@@ -27,7 +27,7 @@ export default function Contact() {
                                 Contact Us
                             </h1>
                             <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                                Reach out to the JM Nyaga campaign team. We're here to listen, assist, and work together for a better Tharaka.
+                                Reach out to the JM Nyaga campaign team. We&#39;re here to listen, assist, and work together for a better Tharaka.
                             </p>
                         </div>
                     </ScrollAnimation>
