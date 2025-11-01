@@ -240,7 +240,7 @@ export default function AgendaSection() {
                                 <ScrollAnimation key={index} direction="up" delay={1.6 + index * 0.1}>
                                     <div className="group text-center p-6 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                                         {/* Background Glow Effect */}
-                                        <div className={`absolute inset-0 bg-gradient-to-r ${metric.gradient} rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
+                                        <div className={` bg-gradient-to-r ${metric.gradient} rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
 
                                         {/* Metric Icon */}
                                         <div className="text-2xl mb-2">{metric.icon}</div>

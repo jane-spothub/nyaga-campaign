@@ -8,9 +8,9 @@ export default function AboutSection() {
     return (
         <section id="about" className="min-h-screen flex items-center justify-center pt-20 pb-16">
             {/* Background decorative elements */}
-            <div className="fixed inset-0 overflow-hidden pointer-events-none">
-                <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full blur-3xl opacity-40"></div>
-                <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-r from-green-100 to-blue-100 rounded-full blur-3xl opacity-40"></div>
+            <div className="fixed inset-0 overflow-hidden pointer-events-none" style={{ clipPath: 'inset(0)' }}>
+                <div className="absolute top-0 right-0 w-80 h-80 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full blur-3xl opacity-40 transform -translate-y-1/2 translate-x-1/2"></div>
+                <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-r from-green-100 to-blue-100 rounded-full blur-3xl opacity-40 transform translate-y-1/2 -translate-x-1/2"></div>
             </div>
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">

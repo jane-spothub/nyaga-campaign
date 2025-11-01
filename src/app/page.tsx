@@ -9,7 +9,7 @@ export default function Home() {
         <div className="bg-[var(--color-background-light)] text-[var(--color-foreground)] antialiased">
             <HeroSection/>
 
-            <main className="container mx-auto px-6 lg:px-8 py-12 space-y-20">
+            <main className="px-6 lg:px-8 py-12 space-y-20">
 
                 <About/>
                 <Vision/>

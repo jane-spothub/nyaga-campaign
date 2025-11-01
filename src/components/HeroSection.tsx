@@ -15,17 +15,17 @@ export default function HeroSection() {
             </div>
 
             {/* Background Image with Overlay */}
-            <div className="absolute inset-0">
-                {/*<Image*/}
-                {/*    src="/hero2-bg.png"*/}
-                {/*    alt="Tharaka Constituency Background"*/}
-                {/*    fill*/}
-                {/*    className="object-cover w-full h-full"*/}
-                {/*    priority*/}
-                {/*/>*/}
-                {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-red-900/50 to-orange-900/40"></div>
-            </div>
+            {/*<div className="absolute inset-0">*/}
+            {/*    /!*<Image*!/*/}
+            {/*    /!*    src="/hero2-bg.png"*!/*/}
+            {/*    /!*    alt="Tharaka Constituency Background"*!/*/}
+            {/*    /!*    fill*!/*/}
+            {/*    /!*    className="object-cover w-full h-full"*!/*/}
+            {/*    /!*    priority*!/*/}
+            {/*    />*/}
+            {/*    /!* Gradient overlay *!/*/}
+            {/*    <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-red-900/50 to-orange-900/40"></div>*/}
+            {/*</div>*/}
 
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -70,7 +70,7 @@ export default function HeroSection() {
                                 href="/donate"
                                 className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-yellow-300 to-red-500 text-black rounded-xl font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl min-w-[200px]"
                             >
-                                {/*<span className="text-xl">❤️</span>*/}
+                                <span className="text-xl">❤️</span>
                                 Donate Now
                                 <span className="group-hover:translate-x-1 transition-transform">→</span>
                             </Link>
