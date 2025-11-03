@@ -2,7 +2,7 @@
 "use client";
 
 import Link from "next/link";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram, FaWhatsapp, FaHeart } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram, FaWhatsapp, FaHeart,FaTiktok } from 'react-icons/fa';
 import "../styles/styles.css"
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -16,10 +16,10 @@ export default function Footer() {
     ];
 
     const socialLinks = [
-        { icon: FaFacebook, href: "#", label: "Facebook" },
-        { icon: FaTwitter, href: "#", label: "Twitter" },
-        { icon: FaInstagram, href: "#", label: "Instagram" },
-        { icon: FaWhatsapp, href: "#", label: "WhatsApp" }
+        { icon: FaFacebook, href: "https://www.facebook.com/share/1SmyCkdLZb/", label: "Facebook" },
+        { icon: FaTwitter, href: "https://x.com/JMNyagake?t=mHQ5WNrIV7FyGVnEcVJeJw&s=09", label: "Twitter" },
+        { icon: FaInstagram, href: "https://www.instagram.com/jm_nyaga_kenya?igsh=MWQ4eWt3ZmplaDl3Yg==", label: "Instagram" },
+        { icon: FaTiktok, href: "https://www.tiktok.com/@jmnyagake?_r=1&_t=ZM-915URVUD16x", label: "WhatsApp" }
     ];
 
     return (
@@ -38,7 +38,7 @@ export default function Footer() {
                     {/* Brand Section */}
                     <div className="lg:col-span-1">
                         <div className="flex items-center gap-3 mb-4">
-                            <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                            <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center">
                                 <span className="text-white font-bold text-lg">JM</span>
                             </div>
                             <div>
@@ -131,9 +131,9 @@ export default function Footer() {
                         {/* Call to Action */}
                         <Link
                             href="/volunteer"
-                            className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white text-sm font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                            className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-blue-700 hover:to-purple-700 text-white text-sm font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                         >
-                            <span>🤝</span>
+                            <span>🤝🏾</span>
                             Join Our Team
                         </Link>
                     </div>

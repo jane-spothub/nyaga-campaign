@@ -40,29 +40,29 @@ export default function Header() {
     ];
 
     const actionItems = [
-        { name: "Volunteer", href: "/volunteer", icon: "🤝", color: "from-blue-500 to-cyan-500" },
-        { name: "Donate", href: "/donate", icon: "❤️", color: "from-orange-500 to-red-500" }
+        { name: "Volunteer", href: "/volunteer", icon: "🤝🏾", color: "from-blue-950 to-blue-800" },
+        { name: "Donate", href: "/donate", icon: "❤️", color: "from-orange-500 to-yellow-500" }
     ];
 
     return (
         <>
             <header className={`fixed w-full top-0 left-0 z-50 transition-all duration-500 ${
                 scrolled
-                    ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-slate-200'
-                    : 'bg-white/90 backdrop-blur-sm border-b border-slate-200/80'
+                    ? 'bg-white backdrop-blur-md shadow-lg border-b border-slate-200'
+                    : 'bg-blue-950/40 backdrop-blur-sm border-b border-slate-200/80'
             }`}>
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center py-4">
                         {/* Logo */}
                         <Link href="/" className="flex items-center space-x-3 group">
-                            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
+                            <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
                                 <span className="text-white font-bold text-sm">JM</span>
                             </div>
                             <div className="flex flex-col">
-                                <span className="text-lg font-bold text-slate-800 group-hover:text-blue-600 transition-colors duration-300">
+                                <span className="text-lg font-bold text-blue-500 group-hover:text-blue-600 transition-colors duration-300">
                                     JM Nyaga
                                 </span>
-                                <span className="text-xs text-slate-600 group-hover:text-slate-700 transition-colors duration-300">
+                                <span className="text-xs text-blue-200 group-hover:text-slate-700 transition-colors duration-300">
                                     Tharaka Constituency
                                 </span>
                             </div>
@@ -145,7 +145,7 @@ export default function Header() {
                                 className="flex items-center space-x-3 group"
                                 onClick={handleLinkClick}
                             >
-                                <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg transform group-hover:scale-105 transition-all duration-300">
+                                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-xl flex items-center justify-center shadow-lg transform group-hover:scale-105 transition-all duration-300">
                                     <span className="text-white font-bold text-lg">JM</span>
                                 </div>
                                 <div className="flex flex-col">

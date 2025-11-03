@@ -41,7 +41,7 @@ export default function HeroSection() {
                         {/* Main Heading */}
                         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
                             Building a{" "}
-                            <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-orange-400 to-yellow-700 bg-clip-text text-transparent">
                                 Better Future
                             </span>
                             <br />
@@ -70,9 +70,9 @@ export default function HeroSection() {
 
                             <Link
                                 href="/donate"
-                                className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-red-950 to-red-600 text-white rounded-xl font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl min-w-[200px]"
+                                className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-yellow-500 text-black rounded-xl font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl min-w-[200px]"
                             >
-                                <span className="text-xl">🤍</span>
+                                <span className="text-xl">❤️</span>
                                 Donate Now
                                 <span className="group-hover:translate-x-1 transition-transform">→</span>
                             </Link>

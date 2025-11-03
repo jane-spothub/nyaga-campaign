@@ -276,7 +276,7 @@ export default function AgendaSection() {
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                                         <Link
                                             href="/volunteer"
-                                            className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-slate-800 rounded-xl font-semibold hover:bg-slate-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl min-w-[200px]"
+                                            className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-yellow-500 text-white rounded-xl font-semibold hover:bg-slate-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl min-w-[200px]"
                                         >
                                             <span className="text-xl">🤝</span>
                                             Become a Volunteer
@@ -285,7 +285,7 @@ export default function AgendaSection() {
 
                                         <Link
                                             href="/donate"
-                                            className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-emerald-500 to-green-600 text-white rounded-xl font-semibold hover:from-emerald-600 hover:to-green-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl min-w-[200px]"
+                                            className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-green-500 to-green-800 text-white rounded-xl font-semibold hover:from-emerald-600 hover:to-green-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl min-w-[200px]"
                                         >
                                             <span className="text-xl">❤️</span>
                                             Support Our Agenda
