@@ -50,7 +50,7 @@ export default function HeroSection() {
 
                         {/* Subtitle */}
                         <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 my-8">
-                            <p className="text-xl text-gray-950 max-w-3xl mx-auto mb-0 leading-relaxed">
+                            <p className="text-xl text-white/80 max-w-3xl mx-auto mb-0 leading-relaxed">
                                 Development-first leadership focused on better roads, reliable water,
                                 and real opportunities for Tharaka&#39;s youth. This campaign is about
                                 work, dignity, and measurable progress.
@@ -70,7 +70,7 @@ export default function HeroSection() {
 
                             <Link
                                 href="/donate"
-                                className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-yellow-500 text-black rounded-xl font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl min-w-[200px]"
+                                className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-yellow-600 text-white rounded-xl font-semibold hover:from-orange-600 hover:to-orange-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl min-w-[200px]"
                             >
                                 <span className="text-xl">❤️</span>
                                 Donate Now

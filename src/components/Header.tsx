@@ -74,7 +74,7 @@ export default function Header() {
                                 <Link
                                     key={item.name}
                                     href={item.href}
-                                    className="font-medium text-slate-700 hover:text-blue-600 transition-all duration-300 hover:scale-105 relative group"
+                                    className="font-medium text-purple-600 hover:text-purple-500 transition-all duration-300 hover:scale-105 relative group"
                                 >
                                     {item.name}
                                     <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300"></span>
