@@ -2,6 +2,7 @@
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import {ConditionalHeaderFooter} from "@/components/ConditionalHeaderFooter";
 
 export const metadata = {
     title: "JM Nyaga Campaign",
@@ -13,13 +14,18 @@ export default function RootLayout({
                                    }: {
     children: React.ReactNode;
 }) {
+    // This is still static, but you could use a hacky approach
+    // Note: This is not recommended for production
+
     return (
         <html lang="en">
         <body className="bg-white text-black" data-gramm="false" data-gr-ext-installed="">
-        <Header/>
-        <main>{children}</main>
-        <Footer/>
+        <ConditionalHeaderFooter>
+            {children}
+        </ConditionalHeaderFooter>
         </body>
         </html>
     );
 }
+
+// Client component for conditional rendering
