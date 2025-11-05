@@ -51,15 +51,15 @@ export default function Header() {
                     ? 'bg-white backdrop-blur-md shadow-lg border-b border-slate-200'
                     : 'bg-blue-950/40 backdrop-blur-sm border-b border-slate-200/80'
             }`}>
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex justify-between items-center py-4">
+                <div className="container mx-auto px-3 sm:px-6 lg:px-8">
+                    <div className="flex justify-between items-center py-3 sm:py-4">
                         {/* Logo */}
-                        <Link href="/" className="flex items-center space-x-3 group">
-                            <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
-                                <span className="text-white font-bold text-sm">JM</span>
+                        <Link href="/" className="flex items-center space-x-2 sm:space-x-3 group">
+                            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
+                                <span className="text-white font-bold text-xs sm:text-sm">JM</span>
                             </div>
                             <div className="flex flex-col">
-                                <span className="text-lg font-bold text-blue-500 group-hover:text-blue-600 transition-colors duration-300">
+                                <span className="text-base sm:text-lg font-bold text-blue-500 group-hover:text-blue-600 transition-colors duration-300">
                                     JM Nyaga
                                 </span>
                                 <span className="text-xs text-blue-200 group-hover:text-slate-700 transition-colors duration-300">
@@ -88,7 +88,7 @@ export default function Header() {
                                 <Link
                                     key={item.name}
                                     href={item.href}
-                                    className={`px-5 py-2.5 rounded-xl font-semibold text-white bg-gradient-to-r ${item.color} hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2 shadow-md`}
+                                    className={`px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl font-semibold text-white bg-gradient-to-r ${item.color} hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2 shadow-md text-sm sm:text-base`}
                                 >
                                     <span className="text-lg">{item.icon}</span>
                                     <span>{item.name}</span>
@@ -99,17 +99,17 @@ export default function Header() {
                         {/* Mobile Menu Button */}
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="lg:hidden p-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all duration-300"
+                            className="lg:hidden p-2 sm:p-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all duration-300"
                             aria-label="Toggle menu"
                         >
-                            <div className="w-6 h-6 relative">
-                                <span className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-0.5 bg-current transition-all duration-300 ${
+                            <div className="w-5 h-5 sm:w-6 sm:h-6 relative">
+                                <span className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-0.5 sm:w-5 sm:h-0.5 bg-current transition-all duration-300 ${
                                     isOpen ? 'rotate-45 translate-y-0' : '-translate-y-1.5'
                                 }`}></span>
-                                <span className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-0.5 bg-current transition-all duration-300 ${
+                                <span className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-0.5 sm:w-5 sm:h-0.5 bg-current transition-all duration-300 ${
                                     isOpen ? 'opacity-0' : 'opacity-100'
                                 }`}></span>
-                                <span className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-0.5 bg-current transition-all duration-300 ${
+                                <span className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-0.5 sm:w-5 sm:h-0.5 bg-current transition-all duration-300 ${
                                     isOpen ? '-rotate-45 translate-y-0' : 'translate-y-1.5'
                                 }`}></span>
                             </div>
@@ -133,23 +133,24 @@ export default function Header() {
 
                 {/* Side Menu Panel */}
                 <div className={`
-                    absolute top-0 right-0 h-full w-80 max-w-full bg-white shadow-2xl
+                    absolute top-0 right-0 h-full w-72 sm:w-80 max-w-full bg-white shadow-2xl
                     transform transition-transform duration-500 ease-in-out
                     ${isOpen ? 'translate-x-0' : 'translate-x-full'}
+                    flex flex-col
                 `}>
-                    {/* Header Section */}
-                    <div className="p-6 border-b border-slate-200">
-                        <div className="flex items-center justify-between mb-6">
+                    {/* Header Section - Fixed */}
+                    <div className="p-4 sm:p-6 border-b border-slate-200 bg-white flex-shrink-0">
+                        <div className="flex items-center justify-between mb-4 sm:mb-6">
                             <Link
                                 href="/"
-                                className="flex items-center space-x-3 group"
+                                className="flex items-center space-x-2 sm:space-x-3 group"
                                 onClick={handleLinkClick}
                             >
-                                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-xl flex items-center justify-center shadow-lg transform group-hover:scale-105 transition-all duration-300">
-                                    <span className="text-white font-bold text-lg">JM</span>
+                                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-xl flex items-center justify-center shadow-lg transform group-hover:scale-105 transition-all duration-300">
+                                    <span className="text-white font-bold text-base sm:text-lg">JM</span>
                                 </div>
                                 <div className="flex flex-col">
-                                    <span className="text-lg font-bold text-slate-800">JM Nyaga</span>
+                                    <span className="text-base sm:text-lg font-bold text-slate-800">JM Nyaga</span>
                                     <span className="text-xs text-slate-600">Tharaka Constituency</span>
                                 </div>
                             </Link>
@@ -157,75 +158,78 @@ export default function Header() {
                             {/* Close Button */}
                             <button
                                 onClick={() => setIsOpen(false)}
-                                className="p-2 rounded-lg hover:bg-slate-100 transition-colors duration-200"
+                                className="p-1.5 sm:p-2 rounded-lg hover:bg-slate-100 transition-colors duration-200"
                                 aria-label="Close menu"
                             >
-                                <svg className="w-6 h-6 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                                 </svg>
                             </button>
                         </div>
 
                         {/* Contact Info */}
-                        <div className="space-y-2 text-sm text-slate-600">
+                        <div className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-slate-600">
                             <div className="flex items-center gap-2">
-                                <span className="text-blue-500">📞</span>
+                                <span className="text-blue-500 text-sm">📞</span>
                                 <span>07XX XXX XXX</span>
                             </div>
                             <div className="flex items-center gap-2">
-                                <span className="text-green-500">📍</span>
+                                <span className="text-green-500 text-sm">📍</span>
                                 <span>Tharaka Constituency</span>
                             </div>
                         </div>
                     </div>
 
-                    {/* Navigation Links */}
-                    <nav className="p-6 space-y-2">
-                        {navItems.map((item) => (
-                            <Link
-                                key={item.name}
-                                href={item.href}
-                                onClick={handleLinkClick}
-                                className="flex items-center gap-4 p-4 rounded-xl hover:bg-blue-50 transition-all duration-300 group border border-transparent hover:border-blue-200"
-                            >
-                                <span className="text-2xl transition-transform duration-300 group-hover:scale-110">
-                                    {item.icon}
-                                </span>
-                                <div className="flex-1">
-                                    <div className="font-semibold text-slate-800 group-hover:text-blue-600 transition-colors">
-                                        {item.name}
+                    {/* Scrollable Content Area */}
+                    <div className="flex-1 overflow-y-auto">
+                        {/* Navigation Links */}
+                        <nav className="p-4 sm:p-6 space-y-1.5 sm:space-y-2">
+                            {navItems.map((item) => (
+                                <Link
+                                    key={item.name}
+                                    href={item.href}
+                                    onClick={handleLinkClick}
+                                    className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl hover:bg-blue-50 transition-all duration-300 group border border-transparent hover:border-blue-200"
+                                >
+                                    <span className="text-xl sm:text-2xl transition-transform duration-300 group-hover:scale-110 flex-shrink-0">
+                                        {item.icon}
+                                    </span>
+                                    <div className="flex-1 min-w-0">
+                                        <div className="font-semibold text-slate-800 group-hover:text-blue-600 transition-colors truncate text-sm sm:text-base">
+                                            {item.name}
+                                        </div>
+                                        <div className="text-xs sm:text-sm text-slate-500 group-hover:text-slate-600 truncate">
+                                            {item.description}
+                                        </div>
                                     </div>
-                                    <div className="text-sm text-slate-500 group-hover:text-slate-600">
-                                        {item.description}
-                                    </div>
-                                </div>
-                                <span className="text-slate-400 group-hover:text-blue-500 transition-colors transform group-hover:translate-x-1">
-                                    →
-                                </span>
-                            </Link>
-                        ))}
-                    </nav>
+                                    <span className="text-slate-400 group-hover:text-blue-500 transition-colors transform group-hover:translate-x-1 flex-shrink-0 text-sm">
+                                        →
+                                    </span>
+                                </Link>
+                            ))}
+                        </nav>
 
-                    {/* Action Buttons */}
-                    <div className="p-6 border-t border-slate-200 space-y-3">
-                        {actionItems.map((item) => (
-                            <Link
-                                key={item.name}
-                                href={item.href}
-                                onClick={handleLinkClick}
-                                className={`flex items-center justify-center gap-3 p-4 rounded-xl font-semibold text-white bg-gradient-to-r ${item.color} hover:shadow-lg transition-all duration-300 transform hover:scale-105 shadow-md`}
-                            >
-                                <span className="text-lg">{item.icon}</span>
-                                <span>{item.name}</span>
-                            </Link>
-                        ))}
-                    </div>
+                        {/* Action Buttons */}
+                        <div className="p-4 sm:p-6 border-t border-slate-200 space-y-2 sm:space-y-3">
+                            {actionItems.map((item) => (
+                                <Link
+                                    key={item.name}
+                                    href={item.href}
+                                    onClick={handleLinkClick}
+                                    className={`flex items-center justify-center gap-2 sm:gap-3 p-3 sm:p-4 rounded-xl font-semibold text-white bg-gradient-to-r ${item.color} hover:shadow-lg transition-all duration-300 transform hover:scale-105 shadow-md text-sm sm:text-base`}
+                                >
+                                    <span className="text-base sm:text-lg">{item.icon}</span>
+                                    <span>{item.name}</span>
+                                </Link>
+                            ))}
+                        </div>
 
-                    {/* Footer Section */}
-                    <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-slate-200">
-                        <div className="text-center text-sm text-slate-500">
-                            <p>For the People, With the People</p>
-                            <p className="text-xs mt-1">© {new Date().getFullYear()} JM Nyaga</p>
+                        {/* Footer Section */}
+                        <div className="p-4 sm:p-6 border-t border-slate-200 bg-white">
+                            <div className="text-center text-xs sm:text-sm text-slate-500">
+                                <p>For the People, With the People</p>
+                                <p className="text-xs mt-1">© {new Date().getFullYear()} JM Nyaga</p>
+                            </div>
                         </div>
                     </div>
                 </div>

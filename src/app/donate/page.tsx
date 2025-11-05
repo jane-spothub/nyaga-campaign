@@ -239,11 +239,11 @@ export default function Donate() {
                                     </p>
 
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                                        <button className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl min-w-[200px]">
-                                            <span className="text-xl">💰</span>
-                                            Donate Now
-                                            <span className="group-hover:translate-x-1 transition-transform">→</span>
-                                        </button>
+                                        {/*<button className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl min-w-[200px]">*/}
+                                        {/*    <span className="text-xl">💰</span>*/}
+                                        {/*    Donate Now*/}
+                                        {/*    <span className="group-hover:translate-x-1 transition-transform">→</span>*/}
+                                        {/*</button>*/}
 
                                         <Link
                                             href="/contact"
