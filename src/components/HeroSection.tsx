@@ -80,7 +80,7 @@ export default function HeroSection() {
                                         <span
                                             className="bg-gradient-to-r from-orange-400 via-red-400 to-orange-400 bg-clip-text text-transparent bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-500">
 
-                                             JM Nyaga's Vision
+                                             JM Nyaga&#39;s Vision
                                         </span>
                                         <div
                                             className="absolute -bottom-1 sm:-bottom-2 left-0 w-full h-0.5 sm:h-1 bg-gradient-to-r from-orange-400 to-red-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"/>
