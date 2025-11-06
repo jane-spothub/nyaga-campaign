@@ -7,63 +7,108 @@ import Link from "next/link";
 export default function AgendaSection() {
     const developmentPillars = [
         {
-            icon: "🏗️",
-            title: "Infrastructure Development",
+            icon: "💡",
+            title: "Education: Lighting the Mind",
             color: "from-blue-500 to-cyan-500",
             bgColor: "bg-blue-50",
             borderColor: "border-blue-100",
             items: [
-                "Upgrade 50km of feeder roads",
-                "Improve market access roads",
-                "Enhance public transportation",
-                "Digital infrastructure expansion",
-                "Bridge construction projects",
-                "Street lighting installation"
+                "Digital Literacy for Self-Reliance program",
+                "Technology access and upskilling",
+                "Practical, job-ready skills training",
+                "Vocational and technical education",
+                "Pathways to employment or advanced study",
+                "Beyond certificates to meaningful careers"
             ]
         },
         {
-            icon: "💧",
-            title: "Water & Sanitation",
-            color: "from-cyan-500 to-teal-500",
-            bgColor: "bg-cyan-50",
-            borderColor: "border-cyan-100",
-            items: [
-                "New borehole projects",
-                "Water purification systems",
-                "Irrigation schemes",
-                "Sanitation facilities",
-                "Water storage solutions",
-                "Community water points"
-            ]
-        },
-        {
-            icon: "🚀",
-            title: "Youth & Employment",
-            color: "from-purple-500 to-pink-500",
-            bgColor: "bg-purple-50",
-            borderColor: "border-purple-100",
-            items: [
-                "Skills development programs",
-                "Entrepreneurship support",
-                "Job placement initiatives",
-                "Sports and talent development",
-                "Digital skills training",
-                "Business incubation"
-            ]
-        },
-        {
-            icon: "🏥",
-            title: "Healthcare & Education",
+            icon: "💼",
+            title: "Jobs: Creating Wealth, Not Dependence",
             color: "from-green-500 to-emerald-500",
             bgColor: "bg-green-50",
             borderColor: "border-green-100",
             items: [
-                "Health center upgrades",
-                "School infrastructure",
-                "Scholarship programs",
-                "Vocational training",
-                "Medical equipment",
-                "Teacher support"
+                "Tharaka Youth Incubation Hub (TYIH)",
+                "Strategic support for local enterprises",
+                "Value addition for agricultural products",
+                "Attract labor-intensive industries",
+                "Thousands of sustainable jobs",
+                "Income above rural poverty lines"
+            ]
+        },
+        {
+            icon: "💧",
+            title: "Water: The Source of Life",
+            color: "from-cyan-500 to-blue-500",
+            bgColor: "bg-cyan-50",
+            borderColor: "border-cyan-100",
+            items: [
+                "Water Security 2029 Initiative",
+                "Rainwater harvesting systems",
+                "Borehole development",
+                "Pipeline expansion",
+                "Data-driven water source mapping",
+                "Increase safe water access to over 50%"
+            ]
+        },
+        {
+            icon: "👥",
+            title: "Human Capital: Enhancing Our People",
+            color: "from-purple-500 to-pink-500",
+            bgColor: "bg-purple-50",
+            borderColor: "border-purple-100",
+            items: [
+                "Comprehensive mentorship programs",
+                "Skills training and development",
+                "Community-driven support systems",
+                "Talent nurturing from childhood to career",
+                "Building self-confidence and capability",
+                "Human dignity as our foundation"
+            ]
+        },
+        {
+            icon: "🏥",
+            title: "Healthcare: Investing in Wellness",
+            color: "from-red-500 to-orange-500",
+            bgColor: "bg-red-50",
+            borderColor: "border-red-100",
+            items: [
+                "Modernize existing dispensaries",
+                "Advocate for Sub-County Hospital",
+                "Ensure adequate medical staffing",
+                "Swift and equitable access to services",
+                "County government accountability",
+                "Catalyze better healthcare processes"
+            ]
+        },
+        {
+            icon: "⚡",
+            title: "Power & Infrastructure: Connecting Tharaka",
+            color: "from-yellow-500 to-orange-500",
+            bgColor: "bg-yellow-50",
+            borderColor: "border-yellow-100",
+            items: [
+                "Accelerate grid extension",
+                "Affordable decentralized solar solutions",
+                "All-weather road construction",
+                "Economic viability prioritization",
+                "Connect farmers to markets",
+                "Power homes, schools, and businesses"
+            ]
+        },
+        {
+            icon: "🌱",
+            title: "Agriculture: Feeding Our Future",
+            color: "from-emerald-500 to-green-500",
+            bgColor: "bg-emerald-50",
+            borderColor: "border-emerald-100",
+            items: [
+                "Shift to commercial agriculture",
+                "Extension services and quality seeds",
+                "Market linkage facilitation",
+                "Climate-resilient crop guidance",
+                "Modern irrigation techniques",
+                "Maximize yields and profitability"
             ]
         }
     ];
@@ -72,21 +117,21 @@ export default function AgendaSection() {
         {
             phase: "First 100 Days",
             period: "Immediate Action",
-            tasks: ["Road assessments", "Water project planning", "Youth program launch"],
+            tasks: ["Program planning & stakeholder engagement", "Resource mobilization", "Quick-win project identification"],
             color: "bg-green-100 text-green-800 border-green-200",
             progress: "w-1/4"
         },
         {
             phase: "First Year",
             period: "Implementation Phase",
-            tasks: ["Infrastructure projects", "Skills training", "Healthcare upgrades"],
+            tasks: ["Infrastructure projects launch", "Skills training programs", "Water initiative rollout"],
             color: "bg-blue-100 text-blue-800 border-blue-200",
             progress: "w-2/4"
         },
         {
             phase: "Five Year Plan",
             period: "Sustainable Development",
-            tasks: ["Economic growth", "Education excellence", "Community prosperity"],
+            tasks: ["50%+ water access achievement", "Youth employment targets", "Agricultural transformation"],
             color: "bg-purple-100 text-purple-800 border-purple-200",
             progress: "w-full"
         }
@@ -101,43 +146,43 @@ export default function AgendaSection() {
             </div>
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-                <div className="max-w-6xl mx-auto">
+                <div className="max-w-7xl mx-auto">
                     {/* Enhanced Header */}
                     <ScrollAnimation direction="up" delay={0.2}>
                         <div className="text-center mb-16">
                             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-sm font-medium mb-6">
                                 <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
-                                Development Blueprint
+                                Agenda 7: The Seventh Chance
                             </div>
                             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-slate-900 to-blue-800 bg-clip-text text-transparent mb-6">
-                                Our Agenda
+                                Our Manifesto
                             </h1>
-                            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                                A comprehensive, actionable development plan for Tharaka Constituency with clear timelines,
-                                measurable outcomes, and community-driven priorities.
+                            <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
+                                A revolutionary seven-point agenda to end poverty through strategic planning, collaboration,
+                                and fighting handouts. This is our seventh chance to rise from the dust and build lasting prosperity.
                             </p>
                         </div>
                     </ScrollAnimation>
 
                     {/* Development Pillars Grid */}
                     <ScrollAnimation direction="up" delay={0.4}>
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                             {developmentPillars.map((pillar, index) => (
                                 <ScrollAnimation key={index} direction="up" delay={0.6 + index * 0.1}>
                                     <div className="group relative">
                                         <div className={`absolute -inset-1 bg-gradient-to-r ${pillar.color} rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500`}></div>
-                                        <div className={`relative ${pillar.bgColor} rounded-xl p-6 border ${pillar.borderColor} shadow-sm hover:shadow-md transition-all duration-300`}>
+                                        <div className={`relative ${pillar.bgColor} rounded-xl p-6 border ${pillar.borderColor} shadow-sm hover:shadow-md transition-all duration-300 h-full`}>
                                             <div className="flex items-center gap-4 mb-4">
                                                 <div className={`w-14 h-14 bg-gradient-to-r ${pillar.color} rounded-xl flex items-center justify-center text-white text-2xl`}>
                                                     {pillar.icon}
                                                 </div>
-                                                <h3 className="text-2xl font-bold text-slate-800">{pillar.title}</h3>
+                                                <h3 className="text-xl font-bold text-slate-800">{pillar.title}</h3>
                                             </div>
                                             <ul className="space-y-3">
                                                 {pillar.items.map((item, itemIndex) => (
-                                                    <li key={itemIndex} className="flex items-center gap-3 text-slate-700">
-                                                        <div className="w-2 h-2 bg-slate-300 rounded-full flex-shrink-0"></div>
-                                                        <span>{item}</span>
+                                                    <li key={itemIndex} className="flex items-start gap-3 text-slate-700">
+                                                        <div className="w-2 h-2 bg-slate-300 rounded-full flex-shrink-0 mt-2"></div>
+                                                        <span className="text-sm">{item}</span>
                                                     </li>
                                                 ))}
                                             </ul>
@@ -208,60 +253,8 @@ export default function AgendaSection() {
                         </div>
                     </ScrollAnimation>
 
-                    {/* Key Metrics Section */}
-                    <ScrollAnimation direction="up" delay={1.4}>
-                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-                            {[
-                                {
-                                    value: "50km",
-                                    label: "Roads to Upgrade",
-                                    gradient: "from-orange-500 to-red-500",
-                                    icon: "🛣️"
-                                },
-                                {
-                                    value: "10+",
-                                    label: "Water Projects",
-                                    gradient: "from-cyan-500 to-blue-500",
-                                    icon: "💧"
-                                },
-                                {
-                                    value: "5,000+",
-                                    label: "Youth to Empower",
-                                    gradient: "from-purple-500 to-pink-500",
-                                    icon: "🚀"
-                                },
-                                {
-                                    value: "100%",
-                                    label: "Community Focus",
-                                    gradient: "from-green-500 to-emerald-500",
-                                    icon: "👥"
-                                }
-                            ].map((metric, index) => (
-                                <ScrollAnimation key={index} direction="up" delay={1.6 + index * 0.1}>
-                                    <div className="group text-center p-6 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                                        {/* Background Glow Effect */}
-                                        <div className={` bg-gradient-to-r ${metric.gradient} rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
-
-                                        {/* Metric Icon */}
-                                        <div className="text-2xl mb-2">{metric.icon}</div>
-
-                                        {/* Value with Gradient Background */}
-                                        <div className={`w-16 h-16 bg-gradient-to-r ${metric.gradient} rounded-2xl flex items-center justify-center text-white text-lg font-bold mx-auto mb-3 shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-110`}>
-                                            {metric.value}
-                                        </div>
-
-                                        {/* Label */}
-                                        <div className="text-sm font-semibold text-slate-700 group-hover:text-slate-900 transition-colors duration-300">
-                                            {metric.label}
-                                        </div>
-                                    </div>
-                                </ScrollAnimation>
-                            ))}
-                        </div>
-                    </ScrollAnimation>
-
                     {/* Enhanced Call to Action */}
-                    <ScrollAnimation direction="up" delay={1.8}>
+                    <ScrollAnimation direction="up" delay={1.4}>
                         <div className="max-w-4xl mx-auto">
                             <div className="relative bg-gradient-to-r from-slate-800 to-blue-900 rounded-3xl p-8 md:p-12 text-white overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
