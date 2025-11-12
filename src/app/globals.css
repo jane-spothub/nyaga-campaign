@@ -71,3 +71,47 @@ html {
     backdrop-filter: blur(20px);
     border: 1px solid var(--color-glass-border);
 }
+
+/* Add to your globals.css or tailwind.config.js */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes loadingBar {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.animate-loadingBar {
+    animation: loadingBar 2s ease-in-out infinite;
+}
+
+.animation-delay-300 {
+    animation-delay: 300ms;
+}
+
+.animation-delay-600 {
+    animation-delay: 600ms;
+}
+
+.animation-delay-1000 {
+    animation-delay: 1000ms;
+}
