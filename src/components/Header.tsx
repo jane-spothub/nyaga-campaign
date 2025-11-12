@@ -36,7 +36,8 @@ export default function Header() {
         { name: "About", href: "/about", icon: "👤", description: "Know JM Nyaga" },
         { name: "Vision", href: "/vision", icon: "🎯", description: "Our future vision" },
         { name: "Agenda", href: "/agenda", icon: "📋", description: "Development plan" },
-        { name: "Contact", href: "/contact", icon: "📞", description: "Get in touch" }
+        { name: "Contact", href: "/contact", icon: "📞", description: "Get in touch" },
+        { name: "Events", href: "/events", icon: "📌", description: "Get in touch" }
     ];
 
     const actionItems = [

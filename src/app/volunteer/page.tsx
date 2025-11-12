@@ -205,8 +205,8 @@ export default function VolunteerPage() {
                                 <div className="grid grid-cols-2 gap-3 sm:gap-4">
                                     {[
                                         { value: "500+", label: "Active Volunteers", color: "text-orange-600" },
-                                        { value: "10+", label: "Wards Covered", color: "text-green-600" },
-                                        { value: "50+", label: "Events Monthly", color: "text-purple-600" },
+                                        { value: "5", label: "Wards Covered", color: "text-green-600" },
+                                        { value: "10+", label: "Events Monthly", color: "text-purple-600" },
                                         { value: "24/7", label: "Support", color: "text-blue-600" }
                                     ].map((stat, index) => (
                                         <div key={index} className="text-center p-3 sm:p-4 bg-white rounded-lg sm:rounded-xl border border-slate-100 shadow-sm w-full">
@@ -232,7 +232,7 @@ export default function VolunteerPage() {
                                                 Join Our Volunteer Team
                                             </h2>
                                             <p className="text-sm sm:text-lg text-slate-600 break-words px-2">
-                                                Fill out the form below and we'll contact you with opportunities that match your skills and interests.
+                                                Fill out the form below and we&#39;ll contact you with opportunities that match your skills and interests.
                                             </p>
                                         </div>
                                     </ScrollAnimation>
@@ -397,7 +397,7 @@ export default function VolunteerPage() {
                                 <div className="relative text-center w-full">
                                     <h3 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 break-words">Ready to Make a Difference?</h3>
                                     <p className="text-lg sm:text-xl text-orange-100 mb-6 sm:mb-8 max-w-2xl mx-auto break-words px-2">
-                                        Join our growing team of volunteers and be part of the movement that's transforming Tharaka Constituency.
+                                        Join our growing team of volunteers and be part of the movement that&#39;s transforming Tharaka Constituency.
                                     </p>
 
                                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center w-full">

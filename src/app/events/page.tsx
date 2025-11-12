@@ -51,7 +51,7 @@ export default function Events() {
                                         Event Schedule Coming Soon
                                     </h2>
                                     <p className="text-lg sm:text-xl text-orange-100 mb-6 sm:mb-8 max-w-2xl mx-auto break-words">
-                                        We're currently planning exciting community events and town hall meetings. Check back soon for our upcoming schedule!
+                                        We&#39;re currently planning exciting community events and town hall meetings. Check back soon for our upcoming schedule!
                                     </p>
 
                                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
@@ -99,7 +99,7 @@ export default function Events() {
                                     No Upcoming Events Scheduled
                                 </h3>
                                 <p className="text-slate-600 mb-6 sm:mb-8 text-sm sm:text-base break-words">
-                                    We're currently in the planning phase for our community engagement events. New events will be posted here as soon as they're scheduled.
+                                    We&#39;re currently in the planning phase for our community engagement events. New events will be posted here as soon as they&#39;re scheduled.
                                 </p>
 
                                 <div className="space-y-4 sm:space-y-6">
