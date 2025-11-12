@@ -308,7 +308,7 @@ export default function AboutSection() {
                                                     { number: "50+", label: "Community Visits" },
                                                     { number: "1000+", label: "People Engaged" },
                                                     { number: "25+", label: "Projects Initiated" },
-                                                    { number: "7", label: "Wards Covered" }
+                                                    { number: "5", label: "Wards Covered" }
                                                 ].map((stat, index) => (
                                                     <div key={index} className="text-center">
                                                         <div className="text-lg sm:text-xl font-bold text-slate-800">{stat.number}</div>

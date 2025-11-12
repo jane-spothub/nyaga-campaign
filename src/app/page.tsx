@@ -29,7 +29,7 @@ export default function Home() {
                     <HeroSection/>
                     <main className="px-6 lg:px-8 py-12 space-y-20">
                         <About/>
-                        <Vision/>
+                        {/*<Vision/>*/}
                         <Agenda/>
                     </main>
                 </>
