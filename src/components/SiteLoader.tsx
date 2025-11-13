@@ -1,7 +1,7 @@
 // src/components/SiteLoader.tsx
 "use client";
 
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 
 export default function SiteLoader() {
     const [isLoading, setIsLoading] = useState(true);
@@ -56,8 +56,8 @@ export default function SiteLoader() {
                             resolve(null);
                         };
 
-                        img.addEventListener('load', onLoad, { once: true });
-                        img.addEventListener('error', onError, { once: true });
+                        img.addEventListener('load', onLoad, {once: true});
+                        img.addEventListener('error', onError, {once: true});
 
                         setTimeout(() => {
                             img.removeEventListener('load', onLoad);
@@ -92,8 +92,8 @@ export default function SiteLoader() {
                                 cleanup();
                                 resolvePromise();
                             };
-                            video.addEventListener(event, handler, { once: true });
-                            return { event, handler };
+                            video.addEventListener(event, handler, {once: true});
+                            return {event, handler};
                         });
 
                         const errorHandler = () => {
@@ -101,10 +101,10 @@ export default function SiteLoader() {
                             resolvePromise();
                         };
 
-                        video.addEventListener('error', errorHandler, { once: true });
+                        video.addEventListener('error', errorHandler, {once: true});
 
                         const cleanup = () => {
-                            eventHandlers.forEach(({ event, handler }) => {
+                            eventHandlers.forEach(({event, handler}) => {
                                 video.removeEventListener(event, handler);
                             });
                             video.removeEventListener('error', errorHandler);
@@ -195,14 +195,22 @@ export default function SiteLoader() {
 
     return (
         <div className={`
-            fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-blue-900 via-purple-900 to-slate-900 transition-opacity duration-800
+            fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-blue-900 via-blue-950 to-slate-900 transition-opacity duration-800
             ${fadeOut ? 'opacity-0' : 'opacity-100'}
             touch-none select-none
         `}>
             <div className="text-center text-white px-4">
-                {/* Main Name with Animation */}
+                {/* Main Name with Enhanced Animations */}
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-wide">
-                    <span className="animate-fadeInUp block">JM Nyaga</span>
+                    <div className="animate-breathing flex items-center justify-center gap-4">
+                        {/* JM Logo */}
+                        <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center shadow-lg transition-all duration-300 transform hover:scale-105">
+                            <span className="text-white font-bold text-2xl md:text-3xl lg:text-4xl">JM</span>
+                        </div>
+
+                        {/* Nyaga Text */}
+                        <span className="text-white animate-pulse-subtle text-4xl md:text-6xl lg:text-7xl">Nyaga</span>
+                    </div>
                 </h1>
 
                 {/* Subtitle Container */}
@@ -222,8 +230,8 @@ export default function SiteLoader() {
                 {/* Progress Bar */}
                 <div className="mt-8 w-64 max-w-full h-2 bg-white/20 rounded-full overflow-hidden mx-auto">
                     <div
-                        className="h-full bg-gradient-to-r from-blue-400 to-green-400 rounded-full transition-all duration-500 ease-out"
-                        style={{ width: `${progress}%` }}
+                        className="h-full bg-gradient-to-r bg-gradient-to-br from-orange-500 to-yellow-500 rounded-full transition-all duration-500 ease-out"
+                        style={{width: `${progress}%`}}
                     ></div>
                 </div>
 
