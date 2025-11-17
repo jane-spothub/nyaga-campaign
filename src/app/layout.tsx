@@ -1,6 +1,6 @@
 // src/app/layout.tsx
 import "./globals.css";
-import { ConditionalHeaderFooter } from "@/components/ConditionalHeaderFooter";
+import {ConditionalHeaderFooter} from "@/components/ConditionalHeaderFooter";
 
 export const metadata = {
     title: "JM Nyaga Campaign",
@@ -15,7 +15,10 @@ export default function RootLayout({
     return (
         <html lang="en">
         <head>
-            <link rel="icon" href="/images/title-logo.png" />
+            <link rel="icon" href="/images/title-logo.png"/>
+            <title>James Mutwiri Nyaga | Official Website</title>
+            <meta name="description"
+                  content="Official website of James Mutwiri Nyaga. Meet JM Nyaga, view his manifesto, latest news, and learn how to support his political vision for a better future."/>
         </head>
         <body className="bg-white text-black" data-gramm="false" data-gr-ext-installed="">
         <ConditionalHeaderFooter>
