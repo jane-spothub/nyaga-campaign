@@ -25,6 +25,12 @@ export default function RootLayout({
             {children}
         </ConditionalHeaderFooter>
         </body>
+  {/*      <script async*/}
+  {/*              src="https://api.trustedaccounts.org/js-sdk.js"*/}
+  {/*              onLoad="new TrustedTraffic({*/}
+  {/*  publishableKey: 'pk_live_Cvq6Llp10zd9ggZ5pY0DGoQIEPun0uy06Du0RH2zxfwluWS0QbpH98OnuxdybVRM'*/}
+  {/*}).init()">*/}
+  {/*      </script>*/}
         </html>
     );
 }

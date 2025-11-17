@@ -3,7 +3,7 @@
 
 import HeroSection from "@/components/HeroSection";
 import About from "@/app/about/page";
-import Vision from "@/app/vision/page";
+// import Vision from "@/app/vision/page";
 import Agenda from "@/app/agenda/page";
 import SiteLoader from "@/components/SiteLoader";
 import { useState, useEffect } from "react";
@@ -15,7 +15,7 @@ export default function Home() {
         // Show content after loader is done (loader handles its own timing)
         const timer = setTimeout(() => {
             setShowContent(true);
-        }, 3500); // Slightly longer than loader duration
+        }, 2500); // Slightly longer than loader duration
 
         return () => clearTimeout(timer);
     }, []);
