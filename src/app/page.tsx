@@ -3,7 +3,7 @@
 
 import HeroSection from "@/components/HeroSection";
 import About from "@/app/about/page";
-// import Vision from "@/app/vision/page";
+import Vision from "@/app/vision/page";
 import Agenda from "@/app/agenda/page";
 import SiteLoader from "@/components/SiteLoader";
 import { useState, useEffect } from "react";
@@ -29,7 +29,7 @@ export default function Home() {
                     <HeroSection/>
                     <main className="px-6 lg:px-8 py-12 space-y-20">
                         <About/>
-                        {/*<Vision/>*/}
+                        <Vision/>
                         <Agenda/>
                     </main>
                 </>
